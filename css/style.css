@@ -1,0 +1,167 @@
+/* ======== Google Font ======== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9F6FF;
+}
+
+/* ======== Variables ======== */
+:root {
+    --primary-purple: #7A28CB;
+    --secondary-purple: #9933FF;
+    --dark-purple: #1a002b;
+    --light-lavender: #F9F6FF;
+}
+
+/* ======== Buttons ======== */
+.btn-primary-gradient {
+    background-image: linear-gradient(to right, var(--primary-purple), var(--secondary-purple));
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+    background-size: 200% auto;
+}
+
+.btn-primary-gradient:hover {
+    background-position: right center;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-outline-primary {
+    color: var(--primary-purple);
+    border-color: var(--primary-purple);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-purple);
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-light:hover, .btn-outline-light:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+
+/* ======== Navbar ======== */
+.navbar-brand span {
+    color: var(--dark-purple);
+}
+
+.navbar-brand img {
+    height: 32px;
+    width: auto;
+}
+
+.nav-link {
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-purple) !important;
+}
+
+
+/* ======== Hero Section ======== */
+.hero-section {
+    padding: 120px 0;
+    background: linear-gradient(rgba(26, 0, 43, 0.7), rgba(26, 0, 43, 0.7)), url('https://placehold.co/1920x1080/1a002b/FFFFFF?text=Devverse') no-repeat center center;
+    background-size: cover;
+}
+
+/* ======== Page Header ======== */
+.page-header {
+    background-color: var(--light-lavender);
+    padding: 80px 0;
+}
+.page-header h1 {
+    color: var(--dark-purple);
+}
+
+/* ======== Feature Cards ======== */
+.feature-card {
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background-image: linear-gradient(to right, var(--primary-purple), var(--secondary-purple));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* ======== Course Cards ======== */
+.course-card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.course-card .card-img-top {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+/* ======== Footer ======== */
+.footer-section {
+    background-color: var(--dark-purple);
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.social-icons .social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+    background-image: linear-gradient(to right, var(--primary-purple), var(--secondary-purple));
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    background-color: rgba(0,0,0,0.2);
+}
