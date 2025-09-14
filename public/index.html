@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Devverse — Learn & Launch</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="header container">
+    <div class="brand">Devverse</div>
+    <nav class="nav">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#courses" class="nav-link">Courses</a>
+      <a href="#about" class="nav-link">About</a>
+      <button id="btn-register" class="btn">Register</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <h1>Learn market-ready skills. Build your future.</h1>
+      <p class="lead">Hands-on courses, mentorship & growth pathways by Devverse.</p>
+      <a href="#courses" class="btn btn-primary">Browse Courses</a>
+    </section>
+
+    <section id="courses" class="courses">
+      <h2>Our Courses</h2>
+      <div id="courses-list" class="grid"></div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About the Founder</h2>
+      <div class="founder">
+        <img src="https://via.placeholder.com/150" alt="Founder photo" class="avatar"/>
+        <div>
+          <h3>Vijey Prasanna</h3>
+          <p>Founder &amp; Lead Instructor at Devverse. Passionate about teaching practical programming, product thinking and community-driven learning.</p>
+          <ul>
+            <li>EMCEE & RJ background — confident speaker</li>
+            <li>Hands-on with Web & Cloud tech</li>
+            <li>Focus: beginner-friendly → job-ready skills</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Register modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button id="close-modal" class="modal-close">✕</button>
+      <h3>Create your account</h3>
+      <form id="register-form">
+        <label>Name <input name="name" required /></label>
+        <label>Email <input name="email" type="email" required /></label>
+        <label>Phone <input name="phone" /></label>
+        <label>Password <input name="password" type="password" required minlength="6" /></label>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+      <div id="register-msg" class="small"></div>
+    </div>
+  </div>
+
+  <footer class="footer container">
+    <small>© Devverse • Built with ❤️</small>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

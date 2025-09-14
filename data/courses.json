@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Full Stack Web Development",
+    "short": "HTML, CSS, JS, Node, Express, Databases",
+    "level": "Beginner → Advanced",
+    "price": "Free/Paid"
+  },
+  {
+    "id": 2,
+    "title": "Frontend Mastery (React)",
+    "short": "React, Hooks, State, Routing, Best Practices",
+    "level": "Intermediate",
+    "price": "Paid"
+  }
+]
